@@ -48,11 +48,20 @@
 
         <img onclick="escolherPersonagem('CJ', 'img/cj.png', '#7ed37e')" class="avatar" src="img/cj.png">
 
-        <button class="voce">📸</button>
+        <label class="voce">📸
+
+            <!-- file(arquivos) accept(aceita) image/todas 
+             hidden (escondido)
+             change (quando mudar algo, faça algo)
+             this (isso aqui) - tudo que tem no input e enviar
+            -->
+            <input type="file" accept="image/*" hidden onchange="lerFoto(this)">
+        </label>
 
     </div>
 
 </body>
+<script src=" https://js.puter.com/v2/ "></script>
 <script src="scripts.js">
     // source = ORIGEM(onde ele tá?)
 
